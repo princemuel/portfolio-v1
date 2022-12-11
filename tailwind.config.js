@@ -98,6 +98,7 @@ module.exports = {
   },
   plugins: [
     require('@savvywombat/tailwindcss-grid-areas'),
+    require('tailwind-scrollbar')({ nocompatible: true }),
     plugin(function ({ addUtilities }) {
       addUtilities({
         '.icon': {

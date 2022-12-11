@@ -2,7 +2,10 @@ import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function MyDocument() {
   return (
-    <Html lang='en'>
+    <Html
+      lang='en'
+      className='scrollbar-thin scrollbar-thumb-primary-100 scrollbar-track-primary-300  scrollbar-track-rounded-md scrollbar-thumb-rounded-md'
+    >
       <Head>
         <meta name='robots' content='all' />
         {/* <meta name='color-scheme' content='dark light' /> */}
