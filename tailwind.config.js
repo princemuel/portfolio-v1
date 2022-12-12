@@ -62,6 +62,13 @@ module.exports = {
         lg: '64em', // => @media (min-width: 1024px) { ... }
         xl: '80em', // => @media (min-width: 1280px) { ... }
         '2xl': '96em', // => @media (min-width: 1536px) { ... }
+
+        '-xs': { max: '30em' },
+        '-sm': { max: '40em' }, // => @media (max-width: 640px) { ... }
+        '-md': { max: '48em' }, // => @media (max-width: 768px) { ... }
+        '-lg': { max: '64em' }, // => @media (max-width: 1024px) { ... }
+        '-xl': { max: '80em' }, // => @media (max-width: 1280px) { ... }
+        '-2xl': { max: '96em' }, // => @media (max-width: 1536px) { ... }
       },
 
       gridTemplateAreas: {
