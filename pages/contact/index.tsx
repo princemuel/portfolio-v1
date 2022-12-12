@@ -1,5 +1,5 @@
-import { ContactPageTemplate } from 'components';
-import type { NextPageWithLayout } from 'types';
+import { ContactPageTemplate } from "components";
+import type { NextPageWithLayout } from "types";
 
 type Props = {};
 

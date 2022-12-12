@@ -1,35 +1,35 @@
-import { Head, Html, Main, NextScript } from 'next/document';
+import { Head, Html, Main, NextScript } from "next/document";
 
 export default function MyDocument() {
   return (
     <Html
-      lang='en'
-      className='scrollbar-thin scrollbar-thumb-teal-500 scrollbar-track-zinc-800  scrollbar-track-rounded-md scrollbar-thumb-rounded-md'
+      lang="en"
+      className="scrollbar-thin scrollbar-track-zinc-800 scrollbar-thumb-teal-500  scrollbar-track-rounded-md scrollbar-thumb-rounded-md"
     >
       <Head>
-        <meta name='robots' content='all' />
+        <meta name="robots" content="all" />
         {/* <meta name='color-scheme' content='dark light' /> */}
         <meta
-          name='theme-color'
-          media='(prefers-color-scheme: light)'
-          content='white'
+          name="theme-color"
+          media="(prefers-color-scheme: light)"
+          content="white"
         />
         <meta
-          name='theme-color'
-          media='(prefers-color-scheme: dark)'
-          content='black'
+          name="theme-color"
+          media="(prefers-color-scheme: dark)"
+          content="black"
         />
-        <meta name='description' content='' />
-        <meta name='author' content='Prince Muel' />
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <meta name="description" content="" />
+        <meta name="author" content="Prince Muel" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          rel='preconnect'
-          href='https://fonts.gstatic.com'
-          crossOrigin='true'
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
         />
         <link
-          href='https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap'
-          rel='stylesheet'
+          href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
+          rel="stylesheet"
         />
       </Head>
 

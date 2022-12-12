@@ -164,7 +164,7 @@ Version: 01
     ============================
   */
   :where(body) {
-    @apply text-zinc-800 font-sans font-normal leading-500;
+    @apply font-sans font-normal leading-500 text-zinc-800;
   }
 
   :is(h1, h2, h3) {
@@ -172,24 +172,24 @@ Version: 01
   }
 
   h1 {
-    @apply text-900 tracking-tightest leading-800;
+    @apply text-900 leading-800 tracking-tightest;
   }
   h2 {
-    @apply text-800 tracking-tighter leading-700;
+    @apply text-800 leading-700 tracking-tighter;
   }
   h3 {
-    @apply text-700 tracking-tighter leading-600;
+    @apply text-700 leading-600 tracking-tighter;
   }
 
   .body-100 {
-    @apply text-500 font-sans font-normal leading-500;
+    @apply font-sans text-500 font-normal leading-500;
   }
   .body-200 {
-    @apply text-400 font-sans font-normal leading-500;
+    @apply font-sans text-400 font-normal leading-500;
   }
 
   :where(li a) {
-    @apply text-[1.3rem] font-sans font-normal no-underline uppercase;
+    @apply font-sans text-400 font-normal uppercase no-underline;
   }
 }
 
@@ -203,25 +203,21 @@ Version: 01
 /* ================================= */
 @layer components {
   .btn {
-    @apply inline-flex items-center text-300 font-sans font-normal text-center uppercase tracking-widest leading-200;
+    @apply inline-flex items-center text-center font-sans text-300 font-normal uppercase leading-200 tracking-widest;
   }
   .btn-primary {
-    @apply gap-4 py-6 px-10 text-white bg-slate-800 hover:bg-teal-500 disabled:bg-gray-200;
+    @apply gap-4 bg-slate-800 py-6 px-10 text-white disabled:bg-gray-200 hover:bg-teal-500;
   }
   :where(.btn-primary :nth-child(1)) {
     width: 1.6rem;
     aspect-ratio: 1;
   }
   .btn-secondary {
-    @apply justify-center py-6 px-12 border border-zinc-800 disabled:border-zinc-800/25 text-zinc-800 hover:text-white disabled:text-zinc-800/25  bg-white hover:bg-zinc-800 disabled:bg-neutral-50;
-  }
-
-  .navlist {
-    @apply flex flex-col md:flex-row gap-4;
+    @apply justify-center border border-zinc-800 bg-white py-6 px-12 text-zinc-800 disabled:border-zinc-800/25 disabled:bg-neutral-50  disabled:text-zinc-800/25 hover:bg-zinc-800 hover:text-white;
   }
 
   .skip-to-content {
-    @apply absolute mx-auto py-[1em] px-[0.5em]  text-white bg-zinc-800 z-[9999] translate-y-[-120%] transition-transform focus:translate-y-0 focus:outline-offset-2 focus:outline focus:outline-zinc-800;
+    @apply absolute z-[9999] mx-auto translate-y-[-120%] bg-zinc-800 py-[1em] px-[0.5em] text-white transition-transform focus:translate-y-0 focus:outline focus:outline-offset-2 focus:outline-zinc-800;
   }
 
   .navigation-link:where(:hover, :focus),

@@ -16,8 +16,8 @@ const SocialLink = ({ alt, url, icon: Icon, classes }: Props) => {
         href={url}
         className={`${classes ? classes : ''}`?.trim()}
       >
-        <span className='sr-only'>{alt}</span>
-        <Icon aria-hidden='true' className='icon' />
+        <span className="sr-only">{alt}</span>
+        <Icon aria-hidden="true" className="icon" />
       </a>
     </li>
   );

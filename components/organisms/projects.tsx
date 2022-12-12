@@ -7,8 +7,8 @@ const projects = Array(4).fill(1);
 const Projects = (props: Props) => {
   return (
     <Section
-      className='h-container mt-40 space-y-40 > * + *'
-      aria-label='projects list'
+      className="> * + * mt-20 space-y-40 h-container"
+      aria-label="projects list"
     >
       {projects?.map((project, i) => {
         return (

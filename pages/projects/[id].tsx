@@ -1,27 +1,22 @@
-import { ProjectPageTemplate } from 'components';
+import { ProjectPageTemplate } from "components";
 import type {
   GetStaticPaths,
   GetStaticProps,
   InferNextPropsType,
   NextPageWithLayout,
-} from 'types';
+} from "types";
 
 type Props = {} & InferNextPropsType<typeof getStaticProps>;
 
 const ProjectDetail: NextPageWithLayout<Props> = (props) => {
-  return (
-    <div>
-      <h1>PROJECT DETAIL</h1>
-      <ProjectPageTemplate />
-    </div>
-  );
+  return <ProjectPageTemplate />;
 };
 
 export default ProjectDetail;
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [{ params: { id: '1' } }, { params: { id: '2' } }],
+    paths: [{ params: { id: "1" } }, { params: { id: "2" } }],
     fallback: false, // can also be true or 'blocking'
   };
 };

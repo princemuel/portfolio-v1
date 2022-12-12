@@ -7,24 +7,24 @@ const DesignPage = (props: Props) => {
     <div>
       <h1>Hello</h1>
 
-      <button type='button' className='btn btn-primary'>
+      <button type="button" className="btn btn-primary">
         <span>
           <icons.arrow.down />
         </span>
         <span>About Me</span>
       </button>
 
-      <button type='button' className='btn btn-primary' disabled={true}>
+      <button type="button" className="btn btn-primary" disabled={true}>
         <span>
           <icons.arrow.down />
         </span>
         <span>About Me</span>
       </button>
 
-      <button type='button' className='btn btn-secondary'>
+      <button type="button" className="btn btn-secondary">
         Contact Me
       </button>
-      <button type='button' className='btn btn-secondary' disabled={true}>
+      <button type="button" className="btn btn-secondary" disabled={true}>
         Contact Me
       </button>
     </div>
