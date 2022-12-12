@@ -164,7 +164,7 @@ Version: 01
     ============================
   */
   :where(body) {
-    @apply text-primary-300 font-sans font-normal leading-500;
+    @apply text-zinc-800 font-sans font-normal leading-500;
   }
 
   :is(h1, h2, h3) {
@@ -206,14 +206,14 @@ Version: 01
     @apply inline-flex items-center text-300 font-sans font-normal text-center uppercase tracking-widest leading-200;
   }
   .btn-primary {
-    @apply gap-4 py-6 px-10 text-neutral-100 bg-primary-200 hover:bg-primary-100 disabled:bg-primary-300;
+    @apply gap-4 py-6 px-10 text-white bg-slate-800 hover:bg-teal-500 disabled:bg-gray-200;
   }
   :where(.btn-primary :nth-child(1)) {
     width: 1.6rem;
     aspect-ratio: 1;
   }
   .btn-secondary {
-    @apply justify-center py-6 px-12 border border-solid border-primary-300 disabled:border-primary-300/25 text-primary-300 hover:text-neutral-100 disabled:text-primary-300/25  bg-neutral-100 hover:bg-primary-300 disabled:bg-neutral-100;
+    @apply justify-center py-6 px-12 border border-zinc-800 disabled:border-zinc-800/25 text-zinc-800 hover:text-white disabled:text-zinc-800/25  bg-white hover:bg-zinc-800 disabled:bg-neutral-50;
   }
 
   .navlist {
@@ -221,12 +221,12 @@ Version: 01
   }
 
   .skip-to-content {
-    @apply absolute mx-auto py-[1em] px-[0.5em]  text-neutral-100 bg-primary-300 z-[9999] translate-y-[-120%] transition-transform focus:translate-y-0 focus:outline-offset-2 focus:outline focus:outline-primary-300;
+    @apply absolute mx-auto py-[1em] px-[0.5em]  text-white bg-zinc-800 z-[9999] translate-y-[-120%] transition-transform focus:translate-y-0 focus:outline-offset-2 focus:outline focus:outline-zinc-800;
   }
 
   .navigation-link:where(:hover, :focus),
   [aria-current='page'] {
-    @apply text-primary-100;
+    @apply text-teal-500;
   }
 }
 

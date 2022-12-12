@@ -12,7 +12,7 @@ type Props = {};
 const ContactPageTemplate = (props: Props) => {
   return (
     <MainContent as='main' id='main-content' aria-label='Contact Page Content'>
-      <Section className='h-container mt-20 py-12 border-y border-primary-300/20 | flex flex-col lg:flex-row gap-8'>
+      <Section className='h-container mt-20 py-12 border-y border-zinc-800/20 | flex flex-col lg:flex-row gap-8'>
         <Heading className='flex-1'>Get in Touch</Heading>
         <div className='flex-1'>
           <Text className='body-200'>
@@ -35,7 +35,7 @@ const ContactPageTemplate = (props: Props) => {
               <SocialLink
                 key={link?.alt}
                 {...link}
-                classes='hover:text-primary-100'
+                classes='hover:text-teal-500'
               />
             ))}
           </ul>
@@ -51,7 +51,7 @@ const ContactPageTemplate = (props: Props) => {
             </label>
             <input
               type='text'
-              className='w-full py-4 px-6 bg-primary-300/20'
+              className='w-full py-4 px-6 bg-zinc-800/20'
               id='name'
               placeholder='Jane Appleseed'
             />
@@ -63,7 +63,7 @@ const ContactPageTemplate = (props: Props) => {
             </label>
             <input
               type='email'
-              className='w-full py-4 px-6 bg-primary-300/20'
+              className='w-full py-4 px-6 bg-zinc-800/20'
               id='email'
               placeholder='email@example.com'
             />
@@ -75,7 +75,7 @@ const ContactPageTemplate = (props: Props) => {
             </label>
             <textarea
               name=''
-              className='w-full min-h-[15rem] py-4 px-6 bg-primary-300/20'
+              className='w-full min-h-[15rem] py-4 px-6 bg-zinc-800/20'
               id='message'
               placeholder='How can I help'
             ></textarea>

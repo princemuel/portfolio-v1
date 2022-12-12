@@ -3,10 +3,10 @@ import { Logo, NavLink, SocialLink } from 'components/atoms';
 
 const Footer = () => {
   return (
-    <footer className='h-container mt-40 bg-primary-300 w-full-shadow'>
-      <section className="relative py-32 text-neutral-100/75 before:content-[''] before:absolute before:top-0 before:left-2/4 before:w-40 before:h-2 before:bg-primary-100 before:-translate-x-2/4 before:md:left-0 before:md:translate-x-0">
+    <footer className='h-container mt-40 bg-zinc-800 w-full-shadow'>
+      <section className="relative py-32 text-white/75 before:content-[''] before:absolute before:top-0 before:left-2/4 before:w-40 before:h-2 before:bg-teal-500 before:-translate-x-2/4 before:md:left-0 before:md:translate-x-0">
         <div className='flex flex-col lg:flex-row items-center md:items-start lg:justify-between gap-12 mb-12 text-center md:text-left'>
-          <Logo className='text-neutral-100' />
+          <Logo className='text-white' />
 
           <nav>
             <ul
@@ -15,10 +15,7 @@ const Footer = () => {
               aria-label='Secondary Navigation'
             >
               {links?.navigation?.map((link) => (
-                <li
-                  key={link.text}
-                  className='text-neutral-100 hover:text-primary-100'
-                >
+                <li key={link.text} className='text-white hover:text-teal-500'>
                   <NavLink activeClassName='' href={link.url}>
                     <a>{link.text}</a>
                   </NavLink>
@@ -52,7 +49,7 @@ const Footer = () => {
               <SocialLink
                 key={link?.alt}
                 {...link}
-                classes='text-neutral-100 hover:text-primary-100'
+                classes='text-white hover:text-teal-500'
               />
             ))}
           </ul>

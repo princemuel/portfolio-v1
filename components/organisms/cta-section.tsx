@@ -11,7 +11,7 @@ const CTASection = () => {
         Interested in doing a project together?
       </Heading>
 
-      <hr className='sm:flex-initial md:flex-auto sm:w-2/5 lg:w-full sm:h-[1px] sm:bg-primary-300/20' />
+      <hr className='sm:flex-initial md:flex-auto sm:w-2/5 lg:w-full sm:h-[1px] sm:bg-zinc-800/20' />
 
       <Link href={`/contact`} passHref>
         <a className='sm:flex-none btn btn-secondary'>Contact Me</a>

@@ -33,7 +33,7 @@ const ProjectCard = ({ isPriority, id }: Props) => {
         </picture>
       </figure>
 
-      <div className='flex-1 flex flex-col items-start justify-center gap-12 py-24 sm:py-10 border-y border-primary-300/10'>
+      <div className='flex-1 flex flex-col items-start justify-center gap-12 py-24 sm:py-10 border-y border-zinc-800/10'>
         <Heading>Manage</Heading>
 
         <p className='body-100'>

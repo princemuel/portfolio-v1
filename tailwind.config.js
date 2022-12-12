@@ -14,25 +14,6 @@ module.exports = {
       pill: '100vmax',
     },
 
-    colors: {
-      current: 'currentColor',
-      transparent: 'transparent',
-      neutral: {
-        100: '#ffffff',
-        900: '#000000',
-      },
-      primary: {
-        100: '#5fb4a2',
-        200: '#203a4c',
-        300: '#33323d',
-      },
-      accent: {
-        100: '#fafafa',
-        200: '#eaeaeb',
-        300: '#f43030',
-      },
-    },
-
     fontFamily: {
       serif: ['Ibarra Real Nova', ...defaultTheme.fontFamily.serif],
       sans: ['Public Sans', ...defaultTheme.fontFamily.sans],

@@ -15,7 +15,7 @@ const Project = (props: Props) => {
       </Section>
 
       <Section as='article' className='h-container mt-40' aria-label=''>
-        <div className='flex flex-col items-start gap-12 py-24 sm:py-10 border-y border-primary-300/10'>
+        <div className='flex flex-col items-start gap-12 py-24 sm:py-10 border-y border-zinc-800/10'>
           <Heading>Manage</Heading>
 
           <Text className='body-100'>
@@ -26,13 +26,13 @@ const Project = (props: Props) => {
           </Text>
 
           <div>
-            <Text className='flex gap-2 text-primary-100 text-400 font-sans font-bold leading-500'>
+            <Text className='flex gap-2 text-teal-500 text-400 font-sans font-bold leading-500'>
               <span>Interaction Design</span>
               <span>/</span>
               <span>Front End Development</span>
             </Text>
 
-            <Text className='flex gap-2 text-primary-100 text-400 font-sans font-bold leading-500'>
+            <Text className='flex gap-2 text-teal-500 text-400 font-sans font-bold leading-500'>
               <span>HTML</span>
               <span>/</span>
               <span>CSS</span>
