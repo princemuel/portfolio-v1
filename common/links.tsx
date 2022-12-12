@@ -3,10 +3,8 @@ import {
   IconArrowDownSVG,
   IconArrowLeftSVG,
   IconArrowRightSVG,
-  IconCloseSVG,
   IconFacebookSVG,
   IconGithubSVG,
-  IconHamburgerSVG,
   IconInstagramSVG,
   IconLinkedInSVG,
   IconTwitterSVG,
@@ -21,10 +19,6 @@ export const icons = {
     down: (props: IconProps) => <IconArrowDownSVG {...props} />,
     left: (props: IconProps) => <IconArrowLeftSVG {...props} />,
     right: (props: IconProps) => <IconArrowRightSVG {...props} />,
-  },
-  mobile: {
-    open: (props: IconProps) => <IconHamburgerSVG {...props} />,
-    close: (props: IconProps) => <IconCloseSVG {...props} />,
   },
 };
 
