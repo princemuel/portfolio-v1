@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-type TextProps<E extends React.ElementType> = {
+type TextProps<E extends React.ElementType<any>> = {
   children: React.ReactNode;
   as?: E;
 };
 
-type Props<E extends React.ElementType> = TextProps<E> &
+type Props<E extends React.ElementType<any>> = TextProps<E> &
   Omit<React.ComponentPropsWithoutRef<E>, keyof TextProps<E>>;
 
 const Text = <E extends React.ElementType = 'p'>({

@@ -1,12 +1,12 @@
 import { LevelProvider, useLevel } from 'context';
 import * as React from 'react';
 
-type SectionProps<E extends React.ElementType> = {
+type SectionProps<E extends React.ElementType<any>> = {
   children: React.ReactNode;
   as?: E;
 };
 
-type Props<E extends React.ElementType> = SectionProps<E> &
+type Props<E extends React.ElementType<any>> = SectionProps<E> &
   Omit<React.ComponentPropsWithoutRef<E>, keyof SectionProps<E>>;
 
 const Section = <E extends React.ElementType = 'section'>({
