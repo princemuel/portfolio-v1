@@ -3,10 +3,10 @@ import {
   ManageJPGMobile,
   ManageJPGMobile2x,
   ManageJPGTablet,
-} from 'common';
-import { Heading } from 'components/atoms';
-import Image from 'next/future/image';
-import Link from 'next/link';
+} from "common";
+import { Heading } from "components/atoms";
+import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   isPriority: boolean;
@@ -27,7 +27,7 @@ const ProjectCard = ({ isPriority, id }: Props) => {
             src={ManageJPGMobile.src}
             width="622"
             height="576"
-            alt={'Manage'}
+            alt={"Manage"}
             priority={isPriority}
           />
         </picture>

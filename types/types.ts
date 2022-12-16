@@ -1,8 +1,8 @@
-import InferNextPropsType from 'infer-next-props-type';
-import type { NextPage } from 'next';
-import type { AppProps } from 'next/app';
-import { ParsedUrlQuery } from 'querystring';
-import type { ReactElement, ReactNode } from 'react';
+import InferNextPropsType from "infer-next-props-type";
+import type { NextPage } from "next";
+import type { AppProps } from "next/app";
+import { ParsedUrlQuery } from "querystring";
+import type { ReactElement, ReactNode } from "react";
 
 /*===============================*
           EVENT TYPES
@@ -12,6 +12,8 @@ export type ReactFormEvent = React.FormEvent<HTMLFormElement>;
 export type ReactSelectEvent = React.ChangeEvent<HTMLSelectElement>;
 export type ReactInputEvent = React.ChangeEvent<HTMLInputElement>;
 export type ReactMouseEvent = React.MouseEvent<HTMLButtonElement>;
+export type IReactMouseEvent<T> = React.MouseEvent<T>;
+export type IReactKeyboardEvent<T> = React.KeyboardEvent<T>;
 
 /*===============================*
           NEXTJS TYPES
@@ -22,7 +24,7 @@ export type {
   GetStaticPaths,
   GetStaticProps,
   NextPage,
-} from 'next';
+} from "next";
 export type { InferNextPropsType };
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
